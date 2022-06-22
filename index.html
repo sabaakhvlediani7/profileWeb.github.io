@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>   
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Century Gothic;
+            
+            
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .SITE_CONTAINER{
+            position: relative;
+        } 
+        .site_header{
+            height: auto;
+            width: 100%;
+            display: grid;
+            box-shadow: 7px 7px 5px  #aaaaaa;
+            background: #00203FFF;
+            height: 75px;
+            
+        }
+
+        
+        
+        .ul {
+            float: right;
+            list-style-type: none;
+            margin-top: 24px;
+        }
+
+        ul li{
+            display: inline-block;
+        }
+
+        .a{
+            text-decoration: none;
+            color: #ADEFD1FF;
+            padding: 8px 22px;  
+            margin: 20px;
+            
+        }
+
+        .a:hover{
+            color: white;
+            transition: 0.6s ease;
+        }
+
+        .logo{
+            
+            width: 100px;
+            height: 100px;
+            margin-left: 160px;
+            position: absolute;      
+            background-repeat: no-repeat;
+        }
+
+        .background-image{
+            position: relative;
+            width: 100%;
+            height: 790px;
+        } 
+
+        
+        .img{
+            position: absolute;
+            width: 100%;
+            height: 780px;
+            background-repeat: no-repeat;
+            filter: brightness(50%);
+
+        }
+
+        .name{
+            position: absolute;
+            color: white ;
+            margin-left: 400px;
+            margin-top: 150px;
+            font-size: 80px;
+            filter: brightness(200%);
+            font-family: Arial, Helvetica, sans-serif;
+  
+        }
+
+        .name2{
+            position: absolute;
+            color: white ;
+            margin-left: 400px;
+            margin-top: 450px;
+            font-size: 30px;
+            filter: brightness(200%);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .name3{
+            position: absolute;
+            color: white ;
+            margin-left: 400px;
+            margin-top: 520px;
+            font-size: 25px;
+            filter: brightness(200%);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .name4{
+            position: absolute;
+            color: white ;
+            margin-left: 400px;
+            margin-top: 555px;
+            font-size: 25px;
+            filter: brightness(200%);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .secondimage{
+            position: relative;
+            width: 100%;
+        }
+
+        
+
+        
+
+
+
+
+        /* .skillbar-container{
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 17px;
+
+        }
+
+        .skills {
+            text-align: right;
+            padding-top: 6px;
+            border-radius: 17px;
+            padding-bottom: 17px;
+            height: 8px;
+            color: white;
+        }
+
+        .python {
+            width: 80%; background-color: #1D91F2; 
+        }
+
+        .C {
+            width: 65%; background-color: #1D91F2;
+        }
+
+        .Web {
+            width: 70%; background-color: #1D91F2;
+        }
+        .Kotlin {
+            width: 60%; background-color: #1D91F2;
+        }
+        .CC {
+            width: 50%; background-color: #1D91F2;
+        } */
+
+
+
+
+
+        /* .myimagediv{
+            position: relative;
+            margin-left: 690px;
+            margin-top: -450px;
+            width: 400px;
+            height: 470px;
+            border: 1px solid #fff;
+  
+      
+        }
+
+        .forimg{
+            position: absolute;
+            width: 500px;
+            height: 400px;
+        } */
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 40px;
+            z-index: 99;
+            font-size: 17px;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+            background-color: #1D91F2;
+            color: white;
+            cursor: pointer;
+            padding: 20px 25px 20px 25px;
+            
+            }
+
+        #myBtn:hover {
+            background-color: #555;
+            }
+
+        .container4{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            height: 650px;
+            width: 960px; 
+            max-width:100%;
+            padding-right:15px;
+            color: black;
+            padding-left:15px;
+            
+        }
+
+        .container5{
+            width: 960px;
+            height: 400px; 
+            max-width:100%; 
+            padding-right: 15px; 
+            padding-left: 15px; 
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        textarea {
+            width: 47%;
+            height: 230px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            margin-left: 500px;
+            margin-top: -220px;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+            
+            }
+        
+
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #ADEFD1FF;
+                border: none;
+                color: black;
+                padding: 16px 32px ;
+                text-decoration: none;
+                width: 90%;              
+                margin: 50px;
+                cursor: pointer;
+                }
+
+
+        .container0 {
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 120px;
+           
+            
+        
+        }
+
+        .skills{
+            
+            text-align: right;
+            color: white;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            
+        }
+
+        .pt{
+            
+            margin: 20px 20px 10px 20px;
+        }
+
+        .python {width: 55%;background-color: #2196F3;border-right: 300px solid #ddd;}
+        .C {width: 35%; background-color: #2196F3;border-right: 535px solid #ddd;}
+        .Web {width: 45%; background-color: #2196F3;border-right: 417px solid #ddd;}
+        .Kotlin {width: 35%; background-color: #2196F3;border-right: 535px solid #ddd;}
+        .CC {width: 30%; background-color: #2196F3;border-right: 595px solid #ddd;}
+
+        
+
+
+        
+        
+
+        
+
+        
+
+
+        
+
+
+        
+
+        
+    </style>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232222292-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-232222292-2');
+        </script>
+
+
+ 
+        <meta charset="utf-8">
+        <title>Personal Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+        maximum-scale=1.0, user-scalable=0">
+
+    </head>
+    <body>
+        <body>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">^ </button>
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+    
+    
+    
+            <div class="SITE_CONTAINER">
+                <header class="site_header">
+                  <div class="divi">
+                    <div class="logo">
+                        <img src='images/mylogo.png'>
+                    </div>
+                    <nav class="nav">
+                        <ul class="ul">
+                            <li><a class="a" href="#Home">Home</a></li>
+                            <li><a class="a" href="#Aboutme">About me</a></li>
+                            <li><a class="a" href="#EducationExperience">Education/Experience</a></li>
+                            <li><a class="a" href="#Hobbies">Hobbies</a></li>
+                            <li><a class="a" href="#FunFacts">Fun Facts</a></li>
+                            <li><a class="a" href="#Contact">Contact</a></li>                   
+                        </ul>
+                    </nav>
+                  </div>  
+                    
+                   
+    
+                </header>
+    
+                <div id="Home" class="background-image">
+                    <img class="img" src="images/computer.jpg">
+                    
+                    <h1 class="name">I <span style="color: rgb(12, 145, 85);"class='entitie'>&apos;</span>M<BR>SABA<BR>AKHVLEDIANI
+                    <span style="color: rgb(12, 145, 85);"class='entitie2'>.</span></h1>
+                    <h3 class="name2">Programmer</h3>
+                    <h3 class="name3">This is my personal information website,</h3>
+                    <h3 class="name4">have a look at my web.</h3>
+                    
+                    
+                </div>
+                
+                
+       
+                
+                
+                <div id="Aboutme" class="about-me" style="background-color: #f9f9ff; width: auto; height: auto; padding: 120px;color: #00203FFF;">
+                    <div class="container" style="width: auto; height: 700px; ">
+                        <div class="aboutMe">
+                            
+                            <h1 class="aboutmyself" style="text-align: center;">About Myself</h1>
+                            <p class="aboutmyself2" style="margin-top: 70px; text-align: center;" >
+                                I'am Saba Akhvlediani, I am a programmer and I love what I do.<br> 
+                                A great programmer is able to understand problems clearly, break them <br> 
+                                down into hypotheses, and propose solutions in a coherent manner. They <br> 
+                                understand concepts quickly, or ask the right questions to help make <br> 
+                                them clear.
+                            </p>
+                            <br>
+                            <b style="margin-left: 120px;">Tools Expertness</b>
+                            <br>
+                            <br>
+                            <div class="container0">
+                                <h3 class="pt">Python</h3>       
+                                <div class="skills python">75%</div>
+                            
+    
+                                <h3 class="pt">C++</h3>
+                                
+                                <div class="skills C"> 55%</div>
+                                
+    
+                                <h3 class="pt">HTML,CSS and JavaScript </h3>
+                            
+                                <div class="skills Web">65%</div>
+                                
+    
+                                <h3 class="pt">Kotlin</h3>
+                            
+                                <div class="skills Kotlin">Kotlin 55%</div>
+    
+                                <h3 class="pt">C</h3>
+                            
+                                <div class="skills CC">C 50%</div>
+                                
+    
+                            </div>
+                            
+    
+    
+    
+    
+                    
+    
+                          
+                            
+                        </div>
+    
+                    </div>
+                </div>
+    
+    
+                <div id="EducationExperience" class="education-experience" style="background:#00203FFF ; color: #ADEFD1FF; padding: 100px 0 50px;">
+                    <div class="container2 " style="width: 960px;height: 700px; max-width:100%; padding-right: 15px; padding-left: 15px; position: relative;margin-left: auto;margin-right: auto;">
+                        <h1>Education</h1>
+                        <hr>
+                        <div class="school" style="margin-left: 400px;">
+                            <br>
+    
+                            <h2><span style="margin-right:15px;font-size:35px;color:#ADEFD1FF">&#8226;</span>School</h2>
+                            <br>
+                            <p>First,I attended N 99 public schools.Than I moved to N 49 public school and I've graduated here.
+                            I was studying normally,I loved Literature and Math.</p>
+        
+                            <Br><br>
+                            <hr>
+                            <h2><span style="margin-right:15px;font-size:35px;color:#ADEFD1FF">&#8226;</span>High Education</h2>
+                            <br>
+                            <p>For now,I am studying at university on second course.My university name
+                                is Bussiness and Technology University and I am learning Information Technologies.</p>
+    
+                        </div>
+                        
+    
+                        <br>
+                        <br>
+                        
+                        <h1>Experience</h1>
+                        <br>
+                        <hr>
+                        <div class="university" style="margin-left: 400px;"><br>
+                                <h2><span style="margin-right:15px;font-size:35px;color:#ADEFD1FF">&#8226;</span>In University</h2>
+                                <br>
+                                <p>During these two years i have had contact with couple of programming languages
+                                For example:Python, C, C++, HTML,CSS and JavaScript,Kotlin... In first semestre,I 
+                                was learning building apps and it was very interesting for me. Also, I like algoritms,
+                                building websites and so on.I have done some basic applications and websites.</p>
+                            
+                        </div>
+                        
+                    </div>
+    
+    
+                </div>
+    
+    
+                <div id="Hobbies" class="hobbies" style="padding: 100px 0 50px;color: #00203FFF;">
+                    <div class="container4">
+                        <div class='hobbies2'>
+                            <img src='images/pig.png' style="margin-top: 130px;margin-left: 600px; position:absolute;">
+                            <br>
+                            <h1 >Hobbies</h1><br>
+                            <hr>
+                            <br>
+                            
+                            <h3 style="margin-left: 0px; font-size: 25px; ;"><span style="margin-right:15px;font-size:35px;color:#ADEFD1FF">&#8226;</span>Programming</h3>
+                            <br>
+                            <p style="margin-left: 0px;font-size: 20px;width: 60%">
+                                My hobbies are create games on my free time, create some basic webs or applications.
+                                Also I am working on some project, I'm trying to make application and website.
+                                I have started both and I'm working on that.
+                            </p>
+                            <br><br>
+                            <h3 style="margin-left: 0px; font-size: 25px;"><span style="margin-right:15px;font-size:35px;color:#ADEFD1FF">&#8226;</span>Hangout</h3>
+                         
+                            <br>
+                            <p style="margin-left: 0px; font-size: 20px;width: 60%">
+                                On my free time I also like hangout with friends and drink beer.One of the best places to hang out with friends is of course your
+                                own house! The comfort that your room offers cannot be offered by any mall or a pub.
+                                Another fun place to hang around with friends is the lounge. Comfortable seating and soothing ambience along with chilled drinks is the perfect setting for spending time with friends. If lounging is not your cup of tea, try hitting the bowling alley.
+                            </p>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+                <div id="FunFacts" class="Funfucts" style="background-color: #f9f9ff; width: auto; height: auto; padding: 120px;color: #00203FFF;">
+                    <div class="container5">
+                        <img src='images/animation.png' >
+                        <h3 style="margin-left: 320px; font-size: 25px;margin-top:-250px;"><span style="margin-right:15px;font-size:35px;color:#ADEFD1FF">&#8226;</span>Fun Facts</h3>
+                            <br>
+                            <p style="margin-left: 320px;font-size: 20px;">
+                                I had 7 hamsters, one dog, one cat and 4 different
+                                parrot which had 5 eggs.
+    
+                                <br><br>
+                                When I was younger, I wanted to be a pilot, and travel around the world.
+                            </p>
+    
+                    </div>
+                
+                
+                </div>
+    
+    
+                <div id="Contact" class="contactme" style="background: #00203FFF ; color: #ADEFD1FF; padding: 100px 0 50px;">
+                    <div class="container6 " style="width: 960px;height: auto; max-width:100%; padding-right: 15px; padding-left: 15px; position: relative;
+                    margin-left: auto;margin-right: auto;">
+                    <h1 style="text-align: center;">If you need, Drop as a line</h1>
+                    <div class="contactus" style="margin-top: 60px;" >
+                        <input name="name" placeholder="Enter your name" required type="text" style="border-radius: o; font-size:12px; padding:15px; margin-bottom:20px; width: 40%;"><br><br>
+                        <input name="email" placeholder="Enter your email" required type="text" style="border-radius: o; font-size:12px; padding:15px; margin-bottom:25px;width: 40%"><br><br>
+                        <input name="text" placeholder="Subject" required type="text" style="border-radius: o; font-size:12px; padding:15px; margin-bottom:-10px;width: 40%">
+                        <textarea placeholder="Some text..."></textarea>
+                        <input type="submit" value="Submit">
+                    </div>
+                    <div class="contactdetails" style=" text-align: center;">
+
+                        <h2 style="text-align: center; font-size: 25px;">My Contact Details</h2><Br> 
+                                <p >Email</p><Br>
+                                <p style="color: #fff;"><a href="mailto:saba.akhvlediani.1@btu.edu.ge">saba.akhvlediani.1@btu.edu.ge</a></p> <Br>
+                                <p >Phone</p><Br>
+                                <p style="color: #fff;"><a href="tel:+995551123456">+995 551 900 919</a></p><Br>
+                                <p >Address</p><Br>
+                                <p style="color: #fff;"s>Tbilisi, Mtatsminda - T.Zhordania street</p>
+
+                    </div>
+
+                        
+                </div>
+
+                
+    
+    
+    
+    
+                
+                
+    
+            </div>
+    
+        </body>
+
+
+    </body>
+</html>
+    
+    
+  
